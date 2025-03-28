@@ -1,6 +1,6 @@
 
 from setuptools import setup, find_packages
-import sample_package
+import better_requests
 requirements_path='requirements.txt'
 
 with open("README.md", "r") as fh:
@@ -12,14 +12,14 @@ def parse_requirements(filename):
 
 install_reqs = parse_requirements(requirements_path)
 setup(
-    name=sample_package.__package_name__,
-    version=str(sample_package.__version__),
-    description=sample_package.__description__,
+    name=better_requests.__package_name__,
+    version=str(better_requests.__version__),
+    description=better_requests.__description__,
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url=sample_package.__url__,
-    author=sample_package.__author__,
-    author_email=sample_package.__email__,
+    url=better_requests.__url__,
+    author=better_requests.__author__,
+    author_email=better_requests.__email__,
     license='MIT',
     install_requires=parse_requirements(requirements_path) ,
     packages=find_packages(),
